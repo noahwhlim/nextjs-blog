@@ -13,9 +13,9 @@ export const metadata = {
 export const header = (
     <header>
       <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
-        <Image src="/../public/logo.png" alt="logo" width={40} height={40} className='mx-auto' />
+        <Image src="/logo.png" alt="logo" width={40} height={40} className='mx-auto' />
         <Link href="/">
-        <h1 className="text-2xl text-white font-bold mt-4">This is Noah's Blog</h1>
+        <h1 className="text-2xl text-white font-bold mt-4">Noah's Blog</h1>
         </Link>
         <p className='text-slate-300'>Welcome to my blog!</p>
       </div>
