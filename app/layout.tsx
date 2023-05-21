@@ -17,7 +17,7 @@ export const header = (
         <Link href="/">
         <h1 className="text-2xl text-white font-bold mt-4">Noah's Blog</h1>
         </Link>
-        <p className='text-slate-300'>Welcome to my blog!</p>
+        <p className='text-slate-300'>temp text</p>
       </div>
     </header>
 )
