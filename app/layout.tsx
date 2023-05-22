@@ -12,8 +12,8 @@ export const metadata = {
 
 export const header = (
     <header>
-      <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
-        <Image src="/logo.png" alt="logo" width={40} height={40} className='mx-auto' />
+      <div className="text-center bg-zinc-700 p-8 my-6 rounded-md">
+        <Image src="/fox.png" alt="logo" width={40} height={40} className='mx-auto' />
         <Link href="/">
         <h1 className="text-2xl text-white font-bold mt-4">Noah's Blog</h1>
         </Link>
@@ -23,9 +23,17 @@ export const header = (
 )
   
 export const footer = (
-  <footer className='border-t border-slate-500 mt-12 py-6 text-center text-slate-400'>
+  <footer className='border-t border-slate-500 mt-12 py-6 text-center content-center text-slate-400'>
     <div>
       <h3>Developed by Noah</h3>
+      <div className='justify-center flex flex-row m-2'>
+        <Link href="https://www.github.com/noahwhlim" className='mx-3'>
+          <Image src="/github.svg" alt="github" width={25} height={25}/>
+        </Link>
+        <Link href="https://www.linkedin.com/in/noahwhlim">
+          <Image src="/linkedin.svg" alt="linkedin" width={25} height={25}/>
+        </Link>
+      </div>
     </div>
   </footer>
 )

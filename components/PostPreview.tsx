@@ -3,14 +3,12 @@ import Link from "next/link";
 
 const PostPreview = (props: PostMetadata) => {
     return (
-      <div className="border border-slate-200 p-4 rounded-md shadow-sm bg-white">
-        <p className="text-sm text-slate-400">{props.date}</p>
+      <div className="p-4 rounded-md shadow-md bg-white hover:shadow-2xl hover:p-6 ease-in-out duration-300">
         <Link href={`/posts/${props.slug}`}>
-          <h2 className="text-violet-600 hover:underline mb-4">{props.title}</h2>
+          <p className="text-sm text-slate-400">{props.date}</p>
+          <h2 className="font-semibold mb-4">{props.title}</h2>
+          <p className="text-slate-700">{props.subtitle}</p>
         </Link>
-        
-        <p className="text-slate-700">{props.subtitle}</p>
-        
       </div>
     );
 }
