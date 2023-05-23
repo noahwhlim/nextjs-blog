@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from "next/link";
 import Image from "next/image";
+import Sidebar from '@/components/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,6 @@ export const header = (
         <Link href="/">
         <h1 className="text-2xl text-white font-bold mt-4">Noah's Blog</h1>
         </Link>
-        <p className='text-slate-300'>temp text</p>
       </div>
     </header>
 )
@@ -47,6 +47,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <div className="mx-auto max-w-3xl px-6 grid grid-cols-4">
+          <div className='col=span-1 bg-zinc-700 p-8 mt-6 mr-6 rounded-md'>
+            <Sidebar />
+          </div>
+          <div className='col-span-3'>
+            {header}
+            {children}
+          </div>
+        </div>
+        <div className='mx-auto max-w-2xl px-6'>
+            {footer}
+          </div> */}
         <div className="mx-auto max-w-2xl px-6">
           {header}
           {children}
